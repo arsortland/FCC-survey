@@ -8,8 +8,8 @@
 </head>
 <body>
     <main id=main>
-<h1 id="title"> André's survey</h1>
-<p id="description"> Add a description here</p>
+<h1 id="title"> Jedi survey</h1>
+<p id="description"> Kenobi school of gifted padawans</p>
 <form id="survey-form">
     <label id="name-label" for="name">
         Name
@@ -23,6 +23,42 @@
         Age
     </label>
     <input id="number" class="form-control" type="number" name="age" min="10" max="99" placeholder="Age">
+    <label id="role-" for="role">Role</label>
+    <select name="role" id="dropdown">
+        <option disabled="" selected="" value="">Select current role</option>
+        <option value="Youngling">Youngling</option>
+        <option value="Padawan">Padawan</option>
+        <option value="Jedi">Jedi</option>
+    </select>
+    <p>On a scale from "Kinda aiight" to "meh" what do you think of the Jedi academy?</p>
+    <label>
+    <input class="input-radio" name="user-score" value="meh" type="radio" checked="">
+    Meh
+    </label>
+    <label>
+        <input class="input-radio" name="user-score" value="zzz" type="radio">
+        zzz
+    </label>
+    <label>
+        <input class="input radio" name="user-score" value="kinda" type="radio">
+        Kinda aiight
+    </label>
+    <p>What would you like to see more of in the coming year?</p>
+    <label>
+        <input class="input-checkbox" type="checkbox" name="feedback" value="lightsaber">
+        Lightsaber training
+    </label>
+    <label>
+        <input type="checkbox" name="feedback"value="force">
+        Applying the Force in the grocery store
+    </label>
+    <label>
+        <input type="checkbox" name="feedback" value="burpees">
+        Mastering the art of burpees so you can jump high af
+    </label>
+    <p>Any other comments/suggestions please write here:</p>
+    <textarea id="comments" class="input-textarea" name ="comments" placeholder="Enter your comments here...."></textarea>
+
 
 <button id="submit" class="submit-button" type="submit">Submit</button>
 </form>
